@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Optional;
 // 1. Spring-managed service component
 @Service 
-public class JavaServices {
+public class Service {
 
     public final TokenService tokenService;
     private final AdminRepository adminRepository;
@@ -30,7 +30,7 @@ public class JavaServices {
 
     // 2. Constructor Injection
     //@Autowired
-    public JavaServices(TokenService tokenService,
+    public Service(TokenService tokenService,
                    AdminRepository adminRepository,
                    DoctorRepository doctorRepository,
                    PatientRepository patientRepository,
